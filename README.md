@@ -11,11 +11,11 @@ A collection of YARA rules I’ve created for personal projects or gathered from
 Example:
 
 ```bash
-# All rules
-yara -r rules/ /path/to/scan
-
 # Single rule
 yara rules/malware/APT_Lotus_Blossom_Chrysalis_Backdoor.yar /path/to/scan
+
+# Single rule, recursive path to scan
+yara rules/malware/APT_Lotus_Blossom_Chrysalis_Backdoor.yar -r /path/to/scan
 ```
 
 ## Structure
